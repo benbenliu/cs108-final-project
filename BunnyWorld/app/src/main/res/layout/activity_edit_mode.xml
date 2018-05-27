@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.stanford.cs108.bunnyworld.EditMode">
+
+    <edu.stanford.cs108.bunnyworld.PageView
+        android:id="@+id/pageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/editShapeBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Shape"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            />
+        <Button
+            android:id="@+id/delShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Shape"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:onClick="deleteShape"
+            />
+        <Button
+            android:id="@+id/editShapeEditor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Shape"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Shape"
+            android:onClick="onCopy"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paste Shape"
+            android:onClick="onPaste"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

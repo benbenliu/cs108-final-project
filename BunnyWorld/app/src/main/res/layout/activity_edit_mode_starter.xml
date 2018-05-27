@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.stanford.cs108.bunnyworld.EditModeStarter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editButtonGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:text="Create Bunny World As You Want"
+        android:textSize="25dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/editButtonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/editCreateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New World"
+            android:onClick="goEditMode"
+            android:layout_gravity="center"
+            />
+        <Button
+        android:id="@+id/editLoadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Load World"
+        android:onClick="goLoad"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Load Default World"
+            android:onClick="goDefault"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bunny World</string>
+    <string name="title_activity_play_mode">PlayMode</string>
+    <string name="title_activity_edit_mode">EditMode</string>
+
+    <string name="trigger_prompt">Choose Trigger</string>
+    <string-array name="trigger_arrays">
+        <item>on click</item>
+        <item>on enter</item>
+        <item>on drop</item>
+    </string-array>
+
+    <string name="action_prompt">Choose Action</string>
+    <string-array name="action_arrays">
+        <item>goto</item>
+        <item>play</item>
+        <item>hide</item>
+        <item>show</item>
+    </string-array>
+
+    <string name="object_promt">Choose Object</string>
+</resources>
